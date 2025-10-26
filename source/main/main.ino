@@ -9,7 +9,7 @@ void setup() {
   M5.Lcd.fillScreen(BLACK);
 
   // 文字色とサイズを設定
-  M5.Lcd.setTextColor(WHITE);
+  M5.Lcd.setTextColor(RED);
   M5.Lcd.setTextSize(3);
 
   // 文字表示
