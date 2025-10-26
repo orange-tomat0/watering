@@ -14,7 +14,7 @@ void setup() {
 
   // 文字表示
   M5.Lcd.setCursor(20, 50);
-  M5.Lcd.println("Hello World!");
+  M5.Lcd.println("Hello CoreS3!");
 }
 
 void loop() {
