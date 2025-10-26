@@ -1,0 +1,10 @@
+lib/tmp/*
+tmp/*
+
+external/*
+
+.vscode/c_cpp_properties.json
+.vscode/arduino.json
+
+build/*
+release/*
