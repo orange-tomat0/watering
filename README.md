@@ -22,6 +22,21 @@ project_root/
 └── downloads/ ← ボードやライブラリの一時ダウンロード
 ````
 
+### ディレクトリの役割
+
+- `source/main/`  
+  プロジェクトの **メインスケッチ** を置く場所です。  
+  例: `main.ino`  `main.h` 
+  → 基本的にはここにプログラムのエントリーポイントを置きます。
+
+- `source/libraries/`  
+  プロジェクト専用の **拡張ライブラリ** を追加する場所です。  
+  → 自作関数やクラス、ヘッダーファイルなどをここに追加します。  
+  → 例: `MySensor/MySensor.h` と `MySensor/MySensor.cpp`
+
+- `external/libraries/`  
+  外部から導入したライブラリ（M5Stack公式やArduino公式など）を置く場所です。
+
 ## ⚙️ 事前準備
 
 ### 1. Arduino CLI のインストール
