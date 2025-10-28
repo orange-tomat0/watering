@@ -22,6 +22,21 @@ project_root/
 └── downloads/ ← ボードやライブラリの一時ダウンロード
 ````
 
+### ディレクトリの役割
+
+- `source/main/`  
+  プロジェクトの **メインスケッチ** を置く場所です。  
+  例: `main.ino`  `main.h` 
+  → 基本的にはここにプログラムのエントリーポイントを置きます。
+
+- `source/libraries/`  
+  プロジェクト専用の **拡張ライブラリ** を追加する場所です。  
+  → 自作関数やクラス、ヘッダーファイルなどをここに追加します。  
+  → 例: `MySensor/MySensor.h` と `MySensor/MySensor.cpp`
+
+- `external/libraries/`  
+  外部から導入したライブラリ（M5Stack公式やArduino公式など）を置く場所です。
+
 ## ⚙️ 事前準備
 
 ### 1. Arduino CLI のインストール
@@ -30,7 +45,32 @@ project_root/
 ### 2. Make のインストール
 [Make for Windowsインストール](https://gnuwin32.sourceforge.net/downlinks/make.php)　これを実行してexeファイルをダウンロード&実行
 
-### 3. 初期セットアップ
+### 3. Windowsでパスを通す
+
+#### Arduino CLI のパスを通す
+
+1. Arduino CLI を解凍またはインストールしたフォルダ（例：`C:\Users\ユーザー名\arduino-cli`）を確認。
+2. 環境変数 `PATH` に追加：
+   - Windows の「環境変数」設定を開く
+   - 「ユーザー環境変数」または「システム環境変数」の `Path` を編集
+   - Arduino CLI のパス（例：`C:\Users\ユーザー名\arduino-cli`）を追加
+
+#### Make のパスを通す
+
+1. Make の `bin` フォルダ（例：`C:\Program Files (x86)\GnuWin32\bin`）を確認。
+2. 同様に `PATH` に追加。
+
+#### 確認
+
+コマンドプロンプトで以下を実行：
+
+```cmd
+arduino-cli version
+make --version
+```
+それぞれのバージョンが出力されたらOK
+
+### 4. 初期セットアップ
 ```
 make first-setup
 ```
