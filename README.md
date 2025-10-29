@@ -110,3 +110,6 @@ make upload
 | `make first-setup` | Arduino CLIの初期設定とライブラリ導入 |
 | `make` | ソースコードのビルド |
 | `make upload` | コンパイル済みバイナリをM5Stack CoreS3へアップロード |
+
+##　著者
+watanabe 
