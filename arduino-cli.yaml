@@ -26,3 +26,5 @@ sketch:
     always_export_binaries: false
 updater:
     enable_notification: true
+network:
+    download_timeout: 600
