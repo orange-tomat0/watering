@@ -32,7 +32,7 @@ prepare_dirs:
 	@echo [OK] I have confirmed the required directories.
 
 first-setup: prepare_dirs
-	arduino-cli --config-file $(CONF) core update-index --verbose
+	arduino-cli --config-file $(CONF) core update-index 
 	arduino-cli --config-file $(CONF) core install m5stack:esp32 --verbose
 	arduino-cli --config-file $(CONF) lib install "M5CoreS3" --verbose
 
