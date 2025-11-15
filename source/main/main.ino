@@ -1,4 +1,3 @@
-
 #include <M5CoreS3.h>
 
 #define INPUT_PIN G1
