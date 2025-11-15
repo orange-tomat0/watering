@@ -18,14 +18,11 @@ void setup()
     M5.Lcd.drawString("ON/OFF PUMP", 160, 200, 1);
     pinMode(INPUT_PIN, INPUT);
     pinMode(PUMP_PIN, OUTPUT);
-    pinMode(25, OUTPUT);
-    digitalWrite(25, 0);
 }
-
-char info[30];
 
 void loop()
 {
+    M5.update();
     rawADC = analogRead(INPUT_PIN);
     M5.Lcd.fillRect(80, 100, 240, 50, BLACK);
     M5.Lcd.setCursor(80, 100);
@@ -36,6 +33,5 @@ void loop()
         digitalWrite(PUMP_PIN, flag);
         flag = !flag;
     }
-    M5.update();
     delay(100);
 }
