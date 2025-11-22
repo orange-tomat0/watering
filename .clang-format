@@ -1,0 +1,6 @@
+BasedOnStyle: LLVM   # ベースとなるスタイル
+IndentWidth: 2       # インデント幅
+TabWidth: 2          # タブ幅
+ColumnLimit: 100     # 1行の最大文字数
+BreakBeforeBraces: Attach  # 波括弧の位置
+AllowShortFunctionsOnASingleLine: false
